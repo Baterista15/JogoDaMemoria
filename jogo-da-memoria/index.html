@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game-Ariel e Gabriel.L</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/236f7dfd45.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Memory Game</div>
+
+      <div class="temp">
+        <span id="timer"></span>
+        <span id="moves"></span>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-circle-pause" id="pause"></i>
+        <i class="fa-solid fa-circle-info" id="info"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="info">
+        <i class="fa-solid fa-xmark"></i>
+        <div>
+          <h2>
+            Como jogar?</h2>
+          <p>
+            Clique em duas cartas para ver se elas combinam. Seu objetivo é encontrar pares
+            de cartas iguais no menor tempo possível e com o menor número
+            número de movimentos. Desafie a sua memória e desfrute deste estimulante
+            jogo! Boa sorte!
+          </p>
+        </div>
+      </section>
+
+      <section class="start">
+        <img src="images/brain-remove-bg.png" alt="" />
+        <h1>Memory Game</h1>
+        <button id="play">Começar</button>
+      </section>
+
+      <section class="cards"></section>
+
+      <section class="pause">
+        <h2>PAUSE</h2>
+        <button id="exit">Sair</button>
+        <button id="continue">Continuar</button>
+      </section>
+
+      <section class="win">
+        <h2>
+          Parabéns! <br />
+          Você ganhou!
+        </h2>
+        <div><img src="images/dragon-win.png" alt="" /></div>
+        <button>Sair</button>
+        <button>JOGUE DE NOVO</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
